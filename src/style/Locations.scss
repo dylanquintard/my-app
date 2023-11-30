@@ -1,0 +1,43 @@
+.LocationTitle {
+    text-align: left;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.LocationLocation {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 100px;
+}
+.collapseLocations {
+        display: flex;
+        flex-direction: row;
+
+        .Collapse {
+            width: 40%;
+            margin-bottom: 10px;
+
+            .btnCollapse {
+                font-size: 18px;
+            }
+        }
+}
+
+.headerLocation {
+    margin-left: 100px;
+}
+
+.filterLocation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 85px;
+  
+    .grey-star,
+    .red-star {
+      margin-right: 15px;
+    }
+  }

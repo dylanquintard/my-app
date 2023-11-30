@@ -1,0 +1,32 @@
+.Carrousel {
+  position: relative;
+  height: 415px;
+  width: 1240px;
+  margin: 50px;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .arrows {
+
+  }
+
+  .arrowleft {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    border: none;
+    background: none;
+  }
+
+  .arrowright {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    border: none;
+    background: none;
+  }
+}

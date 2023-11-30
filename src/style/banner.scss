@@ -1,0 +1,22 @@
+.Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+
+    img {
+        width: 100%;
+        max-width: 1240px;
+        max-height: 223px;
+        object-fit: cover;
+        border-radius: 20px;
+        filter: brightness(0.7);
+    }
+
+    .text-on-image {
+        color: white;
+        position: absolute;
+        font-size: 48px;
+      }
+}
