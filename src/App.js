@@ -6,6 +6,7 @@ import './style/body.scss'
 import Footer from './composants/footer';
 import Navbar from './composants/Navbar';
 import Locations from './pages/Locations';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/Locations/:id' element={<Locations />} component={Locations} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
       </BrowserRouter>
