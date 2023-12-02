@@ -40,6 +40,10 @@ const Locations = () => {
                     </div>
                     <div className="headerLocation">
                         <div className="LocationTitle">{locationData.title}</div>
+                    <div className="LocationHost">
+                        <h3>{locationData.host.name}</h3>
+                        <img src={locationData.host.picture} />
+                    </div>
                     </div>
                     <div className="LocationLocation">{locationData.location}</div>
                     <div className="filterLocation">
