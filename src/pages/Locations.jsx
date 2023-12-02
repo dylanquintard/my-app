@@ -8,6 +8,7 @@ import Carrousel from "../composants/carrousel";
 
 
 const Locations = () => {
+
     const { id } = useParams();
     const navigate = useNavigate();
     const [locationData, setLocationData] = useState({});
@@ -27,10 +28,11 @@ const Locations = () => {
         .then((jsonData) => {
           const location = jsonData.data.find((item) => item.id === id);
   
-          if (location) {
+          if (location && location.title) {
+            document.title=location.title
             setLocationData(location);
+            
           } else {
-            // Utilisez la fonction de navigation pour rediriger l'utilisateur
             setNotFound(true);
           }
         })

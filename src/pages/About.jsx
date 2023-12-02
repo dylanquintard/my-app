@@ -1,8 +1,14 @@
 import Banner from "../composants/banner";
 import Collapse from "../composants/collapse";
 import banner2 from '../images/banner2.png';
+import { useEffect } from "react";
 
 const About = () => {
+
+    useEffect(() => {
+        document.title='Kasa - A propos'
+    })
+
     return (
         <main>
         <div className="About">

@@ -10,6 +10,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 100px;
+    margin-top: -15px;
 }
 .collapseLocations {
         display: flex;
@@ -21,6 +22,7 @@
 
             .btnCollapse {
                 font-size: 18px;
+                border-radius: 10px;
             }
         }
 }
@@ -31,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -30px;
 
     .LocationHost {
         display: flex;
