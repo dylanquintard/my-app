@@ -3,15 +3,12 @@
   height: 415px;
   width: 1240px;
   margin: 50px;
+  margin-bottom: 20px;
 
   img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-  }
-
-  .arrows {
-
   }
 
   .arrowleft {
@@ -28,5 +25,24 @@
     right: 1%;
     border: none;
     background: none;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .Carrousel {
+    height: 255px;
+    width: 335px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    .arrowleft {
+      width: 24px;
+    }
+
+    .arrowright {
+      width: 24px;
+    }
+
   }
 }

@@ -58,17 +58,19 @@ const Locations = () => {
                     <div className="Carrousel">
                         <Carrousel pictures={locationData.pictures} />
                     </div>
+                    <div className="containerLocation">
                     <div className="headerLocation">
                         <div className="LocationTitle">{locationData.title}</div>
+                        <div className="LocationLocation">{locationData.location}</div>
+                        <Tags tags={locationData.tags} />
+                    </div>
+                    <div className="filterLocation">
                         <div className="LocationHost">
                             <h3>{locationData.host.name}</h3>
                             <img src={locationData.host.picture} />
                         </div>
-                    </div>
-                    <div className="LocationLocation">{locationData.location}</div>
-                    <div className="filterLocation">
-                        <Tags tags={locationData.tags} />
                         <RatingBar locationData={locationData} />
+                    </div>
                     </div>
                     <div className="collapseLocations">
                         <Collapse title="Description" content={locationData.description}></Collapse>

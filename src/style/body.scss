@@ -1,13 +1,12 @@
 body {
 	max-width: 1440px;
-	margin: auto;
 }
 * {
     font-family: 'Montserrat';
 	text-decoration: none;
 }
 
-main {
-	margin-left: 100px;
-    margin-right: 100px;
-}
+
+@media (max-width: 380px) {
+	
+  }

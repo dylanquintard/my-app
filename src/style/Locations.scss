@@ -9,58 +9,116 @@
     text-align: left;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 100px;
-    margin-top: -15px;
 }
 .collapseLocations {
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
+  
+    .Collapse {
+      width: 36%;
+      margin-bottom: 10px;
+  
+      .btnCollapse {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+    }
+}
 
-        .Collapse {
-            width: 40%;
-            margin-bottom: 10px;
-
-            .btnCollapse {
-                font-size: 18px;
-                border-radius: 10px;
-            }
-        }
+.containerLocation {
+  display: flex;
+  flex-direction: row;
 }
 
 .headerLocation {
     margin-left: 100px;
     margin-right: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -30px;
+  }
 
-    .LocationHost {
-        display: flex;
-        align-items: center;
-    }
-      
+  .filterLocation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .LocationHost {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
     .LocationHost h3 {
-        margin-right: 10px;
-        width: 100px;
-        text-align: right;
+      margin-right: 10px;
+      width: 100px;
+      text-align: right;
     }
 
     .LocationHost img {
-        border-radius: 50%;
-        width: 75px;
+      border-radius: 50%;
+      width: 75px;
+      height: 75px;
     }
-  }
-
-.filterLocation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 60px;
-    margin-right: 85px;
   
     .grey-star,
     .red-star {
       margin-right: 15px;
+    }
+
+  @media (max-width: 380px) {
+    .LocationTitle {
+      font-size: 18px;
+    }
+
+    .LocationLocation {
+      font-size: 14px;
+    }
+
+    .LocationHost {
+
+      h3 {
+        font-size: 12px;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .containerLocation {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .headerLocation {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .filterLocation {
+      margin-left: 20px;
+      margin-right: 20px;
+      flex-direction: row-reverse;
+      margin-top: -30px;
+      justify-content: space-between;
+
+      .grey-star,
+      .red-star {
+        width: 18px;
+      }
+    }
+
+    .collapseLocations {
+      flex-direction: column;
+
+      .Collapse {
+        width: 90%;
+        
+        .btnCollapse {
+          font-size: 13px;
+        }
+      }
     }
   }

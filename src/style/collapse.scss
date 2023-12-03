@@ -1,6 +1,7 @@
 .Collapse {
-    margin-left: 100px;
-    margin-right: 100px;
+  width: 70%;
+  margin: 0 auto;
+  gap: 20px;
 
         .btnCollapse {
         width: 100%;
@@ -39,15 +40,42 @@
             z-index: 0;
             font-size: 18px;
             color: #FF6060;
-            margin: 20px;
             text-align: left;
             font-weight: 400;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
           }
           
           .content.collapsed {
-            transform: translateY(0px);
+            transform: translateY(20px);
             height: 100%;
             margin-bottom: 50px;
           }
           
+}
+
+@media (max-width: 380px) {
+  .Collapse {
+    width: 85%;
+
+      .btnCollapse {
+        height: 30px;
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .imgCollapse {
+        width: 16px;
+        padding: 5px;
+      }
+
+      .content {
+        font-size: 12px;
+        transform: translateY(-30px);
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+  }
 }

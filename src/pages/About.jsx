@@ -2,6 +2,15 @@ import Banner from "../composants/banner";
 import Collapse from "../composants/collapse";
 import banner2 from '../images/banner2.png';
 import { useEffect } from "react";
+import styled from "styled-components";
+
+const StyledBanner2 = styled.div`
+  margin-bottom: 50px;
+
+  @media (max-width: 380px) {
+    margin-bottom: -30px;
+  }
+`;
 
 const About = () => {
 
@@ -12,10 +21,12 @@ const About = () => {
     return (
         <main>
         <div className="About">
+            <StyledBanner2>
             <div>
             <Banner image={banner2} text={null} 
              />
             </div>
+            </StyledBanner2>
             <div>
                 <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
             </div>

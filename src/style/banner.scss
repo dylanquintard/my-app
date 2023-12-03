@@ -1,10 +1,8 @@
 .Banner {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin: 50px;
 
     img {
         width: 100%;
@@ -22,3 +20,25 @@
         margin-top: 150px;
       }
 }
+
+@media (max-width: 380px) {
+    .Banner {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+
+        img {
+            max-width: 335px;
+            max-height: 111px;
+            border-radius: 10px;
+        }
+
+        .text-on-image {
+            width: 230px;
+            font-size: 24px;
+            margin-top: 160px;
+            text-align: left;
+            margin-left: -50px;
+        }
+    }
+  }

@@ -18,3 +18,22 @@
         text-decoration-thickness: 2px;
       }
 }
+
+@media (max-width: 380px) {
+    .Navbar {
+      margin: 20px;
+
+      img {
+        width: 145px;
+      }
+
+      .lien {
+        font-size: 12px;
+        margin-left: 25px;
+      }
+
+      .lien:hover {
+        text-decoration-thickness: 1px;
+      }
+    }
+  }
