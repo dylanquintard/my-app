@@ -13,7 +13,7 @@
         font-size: 24px;
     }
 
-    .lien:hover {
+    .active {
         text-decoration: underline;
         text-decoration-thickness: 2px;
       }
@@ -32,7 +32,7 @@
         margin-left: 25px;
       }
 
-      .lien:hover {
+      .active {
         text-decoration-thickness: 1px;
       }
     }

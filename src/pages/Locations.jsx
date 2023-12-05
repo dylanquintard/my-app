@@ -1,16 +1,16 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import Collapse from "../composants/collapse";
 import '../style/Locations.scss';
 import Tags from "../composants/tags";
 import RatingBar from "../composants/rating";
 import Carrousel from "../composants/carrousel";
+import Error from "./Error";
 
 
 const Locations = () => {
 
     const { id } = useParams();
-    const navigate = useNavigate();
     const [locationData, setLocationData] = useState({});
     const [isLoading, setLoading] = useState(true);
     const [notFound, setNotFound] = useState(false);
@@ -45,9 +45,13 @@ const Locations = () => {
     }, [id]);
   
     if (notFound) {
-      navigate("/error");
-      return null;
+      return (
+        <Error />
+      )
     }
+
+    const firstname = locationData.host ? locationData.host.name.split(' ')[0] : '';
+    const lastname = locationData.host ? locationData.host.name.split(' ')[1] : '';
 
     return (
         <div className="Locations">
@@ -66,10 +70,15 @@ const Locations = () => {
                     </div>
                     <div className="filterLocation">
                         <div className="LocationHost">
-                            <h3>{locationData.host.name}</h3>
-                            <img src={locationData.host.picture} />
+                            <div className="hostname">
+                              <span className="firstname">{firstname}</span>
+                              <span className="lastname">{lastname}</span>
+                            </div>
+                            <img src={locationData.host.picture} alt="hostPicture" />
                         </div>
+                        <div className="ratingBar">
                         <RatingBar locationData={locationData} />
+                        </div>
                     </div>
                     </div>
                     <div className="collapseLocations">

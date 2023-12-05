@@ -11,6 +11,7 @@ const Carrousel = ({ pictures }) => {
     const arrows = () => {
         return (
             imgCount > 1 ? (
+            <>
                 <div className="arrows">
                     <button className="arrowleft" onClick={() => setIndex((index - 1 + imgCount) % imgCount)}>
                         <img src={arrowleft} alt="arrowleft"></img>
@@ -19,6 +20,10 @@ const Carrousel = ({ pictures }) => {
                         <img src={arrowright} alt="arrowright"></img>
                     </button>
                 </div>
+                <div className='imgCount'>
+                    {index + 1}/{imgCount}
+                </div>
+            </>
             ) : null
         );
     };

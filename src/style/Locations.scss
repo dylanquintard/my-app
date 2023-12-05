@@ -29,6 +29,8 @@
 .containerLocation {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-right: 100px;
 }
 
 .headerLocation {
@@ -49,10 +51,12 @@
     align-items: center;
   }
     
-    .LocationHost h3 {
-      margin-right: 10px;
-      width: 100px;
+    .hostname {
+      display: flex;
+      flex-direction: column;
       text-align: right;
+      margin-right: 5px;
+      font-size: 18px;
     }
 
     .LocationHost img {
@@ -66,6 +70,10 @@
       margin-right: 15px;
     }
 
+    .ratingBar {
+      margin-left: -20px;
+    }
+
   @media (max-width: 380px) {
     .LocationTitle {
       font-size: 18px;
@@ -77,7 +85,7 @@
 
     .LocationHost {
 
-      h3 {
+      .hostname {
         font-size: 12px;
       }
 
@@ -90,6 +98,7 @@
     .containerLocation {
       display: flex;
       flex-direction: column;
+      margin-right: 0;
     }
 
     .headerLocation {
@@ -107,6 +116,11 @@
       .grey-star,
       .red-star {
         width: 18px;
+        margin-right: 10px;
+      }
+
+      .ratingBar {
+        margin-left: 0;
       }
     }
 

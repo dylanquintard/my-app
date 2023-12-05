@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../images/logo.png';
 import '../style/navbar.scss';
 
@@ -7,8 +7,8 @@ const Navbar = () => {
     <div className="Navbar">
         <img src={logo} className='logo' alt="Logo" />
       <div className='Liens'>
-        <Link to="/" className='lien'>Accueil</Link>
-        <Link to="/about" className='lien'>A Propos</Link>
+        <NavLink to="/" className='lien'>Accueil</NavLink>
+        <NavLink to="/about" className='lien'>A Propos</NavLink>
       </div>
     </div>
   );

@@ -17,3 +17,11 @@
         margin-top: 40px;
     }
 }
+
+@media (max-width: 380px) {
+    .Footer {
+        p {
+            font-size: 12px;
+        }
+    }
+}
