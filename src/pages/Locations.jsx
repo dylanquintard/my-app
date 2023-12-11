@@ -54,6 +54,7 @@ const Locations = () => {
     const lastname = locationData.host ? locationData.host.name.split(' ')[1] : '';
 
     return (
+      <main>
         <div className="Locations">
             {isLoading ? (
                 <p>Chargement des données</p>
@@ -90,6 +91,7 @@ const Locations = () => {
                 </>
       )}
         </div>
+        </main>
     );
 }
 

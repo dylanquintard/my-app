@@ -6,12 +6,12 @@ const RatingBar = ({ locationData }) => {
 
   // Générer le tableau d'étoiles en fonction du score
   const generateStars = () => {
-    return Array.from({ length: maxRating }, (_, index) => (
+    return Array.from({ length: maxRating }, (_, index) => ( // Ici on créer un tableau de la longeur de maxRating puis on leurs donne une index, ensuite on génère :
       <img
         key={index + 1}
-        className={index < locationData.rating ? 'red-star' : 'grey-star'}
-        src={index < locationData.rating ? redstar : greystar}
-        alt={`Star ${index + 1}`}
+        className={'rating'} 
+        src={index < locationData.rating ? redstar : greystar} //  Si l'index de l'imaxe est inférieur au score, l'étoile est rouge, sinon elle est grise.
+        alt={`Stars`}
       />
     ));
   };

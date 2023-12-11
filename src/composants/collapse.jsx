@@ -8,7 +8,7 @@ const Collapse = ({
 }) => {
   const [collapsed, setCollapsed] = useState(false);
 
-  const handleToggle = () => {
+  const setToggle = () => {
     setCollapsed(!collapsed);
   };
   
@@ -20,7 +20,7 @@ const Collapse = ({
           src={imgFleche}
           className={`imgCollapse ${collapsed ? "collapsed" : ""}`}
           alt="Fleche"
-          onClick={handleToggle}
+          onClick={setToggle}
         />
       </button>
         <div className={`content ${collapsed ? "collapsed" : ""}`}>
